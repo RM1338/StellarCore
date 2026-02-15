@@ -17,6 +17,16 @@ from .initial_conditions import (
     generate_kroupa_masses,
     normalize_to_nbody_units
 )
+from .integrators import (
+    hermite_step,
+    leapfrog_step,
+    calculate_adaptive_timestep,
+    integrate_step
+)
+from .nbody import (
+    SimulationState,
+    NBodySimulation
+)
 
 __all__ = [
     'get_backend',
@@ -29,5 +39,11 @@ __all__ = [
     'generate_king_model',
     'generate_plummer_sphere',
     'generate_kroupa_masses',
-    'normalize_to_nbody_units'
+    'normalize_to_nbody_units',
+    'hermite_step',
+    'leapfrog_step',
+    'calculate_adaptive_timestep',
+    'integrate_step',
+    'SimulationState',
+    'NBodySimulation'
 ]
