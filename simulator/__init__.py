@@ -11,6 +11,12 @@ from .physics import (
     calculate_total_energy,
     calculate_virial_ratio
 )
+from .initial_conditions import (
+    generate_king_model,
+    generate_plummer_sphere,
+    generate_kroupa_masses,
+    normalize_to_nbody_units
+)
 
 __all__ = [
     'get_backend',
@@ -19,5 +25,9 @@ __all__ = [
     'calculate_gravitational_force',
     'calculate_accelerations',
     'calculate_total_energy',
-    'calculate_virial_ratio'
+    'calculate_virial_ratio',
+    'generate_king_model',
+    'generate_plummer_sphere',
+    'generate_kroupa_masses',
+    'normalize_to_nbody_units'
 ]
